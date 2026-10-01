@@ -1,0 +1,52 @@
+{
+  "coast": {
+    "distance_km": 1.3541085689682777,
+    "latitude": 34.6346981,
+    "longitude": -120.6252741,
+    "osm_way_id": 41412049,
+    "name": "unnamed",
+    "tags": {
+      "natural": "coastline"
+    }
+  },
+  "rail": {
+    "distance_km": 1.2731824802199656,
+    "latitude": 34.63556075374395,
+    "longitude": -120.62408359556251,
+    "osm_way_id": 641766417,
+    "name": "UP Santa Barbara Subdivision",
+    "tags": {
+      "electrified": "no",
+      "gauge": "1435",
+      "maxspeed": "60 mph",
+      "maxspeed:freight": "40 mph",
+      "name": "UP Santa Barbara Subdivision",
+      "operator": "Union Pacific Railroad",
+      "operator:wikidata": "Q725793",
+      "owner": "Union Pacific Railroad",
+      "railway": "rail",
+      "railway:ptc": "yes",
+      "railway:track_class": "4",
+      "railway:track_ref": "1",
+      "usage": "main"
+    }
+  },
+  "road": {
+    "distance_km": 5.629879073196006,
+    "latitude": 34.6826743,
+    "longitude": -120.6038031,
+    "osm_way_id": 16264464,
+    "name": "Ocean Avenue",
+    "tags": {
+      "highway": "secondary",
+      "name": "Ocean Avenue",
+      "old_ref": "SR 246",
+      "tiger:cfcc": "A35",
+      "tiger:county": "Santa Barbara, CA",
+      "tiger:name_base": "Lasalle Canyon",
+      "tiger:name_base_1": "State Route 246",
+      "tiger:name_type": "Rd",
+      "tiger:reviewed": "no"
+    }
+  }
+}

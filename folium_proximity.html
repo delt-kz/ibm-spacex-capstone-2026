@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1ff807bf668f407e944902e74ba56a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1ff807bf668f407e944902e74ba56a9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1ff807bf668f407e944902e74ba56a9 = L.map(
+                "map_e1ff807bf668f407e944902e74ba56a9",
+                {
+                    center: [34.655, -120.57],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_e1ff807bf668f407e944902e74ba56a9);
+
+            
+
+        
+    
+            var tile_layer_bf72890bcae2aaaa5e15db2c49b9cfd3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bf72890bcae2aaaa5e15db2c49b9cfd3.addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            var marker_e102987d07dc83d7ffbb14a324ac99d4 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            var icon_61569907af59adc7eaa9fdd0e7975a4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e102987d07dc83d7ffbb14a324ac99d4.bindTooltip(
+                `<div>
+                     VAFB SLC 4E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e102987d07dc83d7ffbb14a324ac99d4.setIcon(icon_61569907af59adc7eaa9fdd0e7975a4e);
+            
+    
+            var marker_653e33df7a5bb9709e706305b4217d48 = L.marker(
+                [34.6346981, -120.6252741],
+                {
+}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            var icon_0f9b8e2ff68295cdb525ca0a60e1b0b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c04a9c251f07489a46b34305dde5bf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a752d4c149ca643ce796fd55358f273 = $(`<div id="html_4a752d4c149ca643ce796fd55358f273" style="width: 100.0%; height: 100.0%;">Coast: 1.35 km straight line; OSM way 41412049</div>`)[0];
+                popup_5c04a9c251f07489a46b34305dde5bf8.setContent(html_4a752d4c149ca643ce796fd55358f273);
+            
+        
+
+        marker_653e33df7a5bb9709e706305b4217d48.bindPopup(popup_5c04a9c251f07489a46b34305dde5bf8)
+        ;
+
+        
+    
+    
+            marker_653e33df7a5bb9709e706305b4217d48.bindTooltip(
+                `<div>
+                     Coast: 1.35 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_653e33df7a5bb9709e706305b4217d48.setIcon(icon_0f9b8e2ff68295cdb525ca0a60e1b0b7);
+            
+    
+            var poly_line_e7cc76477aea85dc43fa8d1fe91492bb = L.polyline(
+                [[34.632093, -120.610829], [34.6346981, -120.6252741]],
+                {"bubblingMouseEvents": true, "color": "#0b49cb", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0b49cb", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            poly_line_e7cc76477aea85dc43fa8d1fe91492bb.bindTooltip(
+                `<div>
+                     Coast: 1.35 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a7def90ae3329d7d8b03c5e719a35eb4 = L.marker(
+                [34.63556075374395, -120.62408359556251],
+                {
+}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            var icon_3e707499d4c42e8f362a30b4963872d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41ffa0e929ea15676640f4e969793a4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_020145c84f50c0f486a7cd727ef4313b = $(`<div id="html_020145c84f50c0f486a7cd727ef4313b" style="width: 100.0%; height: 100.0%;">Rail: 1.27 km straight line; OSM way 641766417</div>`)[0];
+                popup_41ffa0e929ea15676640f4e969793a4b.setContent(html_020145c84f50c0f486a7cd727ef4313b);
+            
+        
+
+        marker_a7def90ae3329d7d8b03c5e719a35eb4.bindPopup(popup_41ffa0e929ea15676640f4e969793a4b)
+        ;
+
+        
+    
+    
+            marker_a7def90ae3329d7d8b03c5e719a35eb4.bindTooltip(
+                `<div>
+                     Rail: 1.27 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a7def90ae3329d7d8b03c5e719a35eb4.setIcon(icon_3e707499d4c42e8f362a30b4963872d3);
+            
+    
+            var poly_line_767e18d5f41281f289e55ab0f0157e3f = L.polyline(
+                [[34.632093, -120.610829], [34.63556075374395, -120.62408359556251]],
+                {"bubblingMouseEvents": true, "color": "#168041", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#168041", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            poly_line_767e18d5f41281f289e55ab0f0157e3f.bindTooltip(
+                `<div>
+                     Rail: 1.27 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fdafa32960dada29b58d3fc5b9fe26b3 = L.marker(
+                [34.6826743, -120.6038031],
+                {
+}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            var icon_da1e08b56dd9f367b6efff1a2a837a32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94b65f6b5a2267392a38c03d14c34af7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad33b229e27b67e68f57da78fb6fd5a3 = $(`<div id="html_ad33b229e27b67e68f57da78fb6fd5a3" style="width: 100.0%; height: 100.0%;">Road: 5.63 km straight line; OSM way 16264464</div>`)[0];
+                popup_94b65f6b5a2267392a38c03d14c34af7.setContent(html_ad33b229e27b67e68f57da78fb6fd5a3);
+            
+        
+
+        marker_fdafa32960dada29b58d3fc5b9fe26b3.bindPopup(popup_94b65f6b5a2267392a38c03d14c34af7)
+        ;
+
+        
+    
+    
+            marker_fdafa32960dada29b58d3fc5b9fe26b3.bindTooltip(
+                `<div>
+                     Road: 5.63 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdafa32960dada29b58d3fc5b9fe26b3.setIcon(icon_da1e08b56dd9f367b6efff1a2a837a32);
+            
+    
+            var poly_line_fe76098dd2c19f9a63386285289fae3b = L.polyline(
+                [[34.632093, -120.610829], [34.6826743, -120.6038031]],
+                {"bubblingMouseEvents": true, "color": "#d67800", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#d67800", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e1ff807bf668f407e944902e74ba56a9);
+        
+    
+            poly_line_fe76098dd2c19f9a63386285289fae3b.bindTooltip(
+                `<div>
+                     Road: 5.63 km straight line
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

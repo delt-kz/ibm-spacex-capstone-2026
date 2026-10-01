@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0eb579db60da82d52f03e47fbd7274e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0eb579db60da82d52f03e47fbd7274e3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0eb579db60da82d52f03e47fbd7274e3 = L.map(
+                "map_0eb579db60da82d52f03e47fbd7274e3",
+                {
+                    center: [34.632093, -120.610829],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+
+            
+
+        
+    
+            var tile_layer_48b879710a4085efb9acb32d414b0324 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_48b879710a4085efb9acb32d414b0324.addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+            var marker_719e0286a8245f1c1994c71df9b0cb97 = L.marker(
+                [34.632093, -120.610829],
+                {
+}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+            var icon_8e94ddac80000534eb58a2fa51ef7fe5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5fd3e5d5d7d5de2a8e104fff23a0ab3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b864e9eb8b2b8a1b994521f2d3831a9a = $(`<div id="html_b864e9eb8b2b8a1b994521f2d3831a9a" style="width: 100.0%; height: 100.0%;">VAFB SLC 4E: 10 success / 3 failure</div>`)[0];
+                popup_e5fd3e5d5d7d5de2a8e104fff23a0ab3.setContent(html_b864e9eb8b2b8a1b994521f2d3831a9a);
+            
+        
+
+        marker_719e0286a8245f1c1994c71df9b0cb97.bindPopup(popup_e5fd3e5d5d7d5de2a8e104fff23a0ab3)
+        ;
+
+        
+    
+    
+            marker_719e0286a8245f1c1994c71df9b0cb97.bindTooltip(
+                `<div>
+                     VAFB SLC 4E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_719e0286a8245f1c1994c71df9b0cb97.setIcon(icon_8e94ddac80000534eb58a2fa51ef7fe5);
+            
+    
+            var circle_marker_4fc5fdeea74b8a1aca714f0a393999d2 = L.circleMarker(
+                [34.632093, -120.601829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_1a096f15aba12b7de165e3bbf2b94b91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_954e9d4f66d4f6c5c7f380d92a185efa = $(`<div id="html_954e9d4f66d4f6c5c7f380d92a185efa" style="width: 100.0%; height: 100.0%;">Flight 4: no landing</div>`)[0];
+                popup_1a096f15aba12b7de165e3bbf2b94b91.setContent(html_954e9d4f66d4f6c5c7f380d92a185efa);
+            
+        
+
+        circle_marker_4fc5fdeea74b8a1aca714f0a393999d2.bindPopup(popup_1a096f15aba12b7de165e3bbf2b94b91)
+        ;
+
+        
+    
+    
+            var circle_marker_6aa0fb3d3dc20454cad991a787291d9c = L.circleMarker(
+                [34.63581078537635, -120.60285989576911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_1fd82d4940a3a2e699e9388a80b6cf11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_524994e714d9c3479a06bec1e774bdaa = $(`<div id="html_524994e714d9c3479a06bec1e774bdaa" style="width: 100.0%; height: 100.0%;">Flight 18: no landing</div>`)[0];
+                popup_1fd82d4940a3a2e699e9388a80b6cf11.setContent(html_524994e714d9c3479a06bec1e774bdaa);
+            
+        
+
+        circle_marker_6aa0fb3d3dc20454cad991a787291d9c.bindPopup(popup_1fd82d4940a3a2e699e9388a80b6cf11)
+        ;
+
+        
+    
+    
+            var circle_marker_0b5625f32e6e6fab464ff1add0801475 = L.circleMarker(
+                [34.63867687092715, -120.60571641727941],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_1d6c6c8a26fe445333755dbef3422116 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_804a941480242d8f4fd04635c64b4a8a = $(`<div id="html_804a941480242d8f4fd04635c64b4a8a" style="width: 100.0%; height: 100.0%;">Flight 26: landing</div>`)[0];
+                popup_1d6c6c8a26fe445333755dbef3422116.setContent(html_804a941480242d8f4fd04635c64b4a8a);
+            
+        
+
+        circle_marker_0b5625f32e6e6fab464ff1add0801475.bindPopup(popup_1d6c6c8a26fe445333755dbef3422116)
+        ;
+
+        
+    
+    
+            var circle_marker_285d7b3852daad197e9b2f83fcab9281 = L.circleMarker(
+                [34.64003467099278, -120.6097441698777],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_010575b0b11438fd2cccc1bf55564429 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc0eeed289e3c6a25d969172889e57d5 = $(`<div id="html_cc0eeed289e3c6a25d969172889e57d5" style="width: 100.0%; height: 100.0%;">Flight 34: landing</div>`)[0];
+                popup_010575b0b11438fd2cccc1bf55564429.setContent(html_cc0eeed289e3c6a25d969172889e57d5);
+            
+        
+
+        circle_marker_285d7b3852daad197e9b2f83fcab9281.bindPopup(popup_010575b0b11438fd2cccc1bf55564429)
+        ;
+
+        
+    
+    
+            var circle_marker_217f525ef14e7cc3d1e53c9de7515a7a = L.circleMarker(
+                [34.63957312994148, -120.61402044398338],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_8eb853545bd7f5a1b5ef82064f2a9f90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f980771fc8462a76213e3d99d404d0c = $(`<div id="html_8f980771fc8462a76213e3d99d404d0c" style="width: 100.0%; height: 100.0%;">Flight 37: landing</div>`)[0];
+                popup_8eb853545bd7f5a1b5ef82064f2a9f90.setContent(html_8f980771fc8462a76213e3d99d404d0c);
+            
+        
+
+        circle_marker_217f525ef14e7cc3d1e53c9de7515a7a.bindPopup(popup_8eb853545bd7f5a1b5ef82064f2a9f90)
+        ;
+
+        
+    
+    
+            var circle_marker_99c5536c68699e5cd2f8841ec0a8ee13 = L.circleMarker(
+                [34.63739798126593, -120.61756559673354],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_f9ec836a632387854abb66726d735b8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d12d514f0db420fec3281a312df7e417 = $(`<div id="html_d12d514f0db420fec3281a312df7e417" style="width: 100.0%; height: 100.0%;">Flight 39: landing</div>`)[0];
+                popup_f9ec836a632387854abb66726d735b8a.setContent(html_d12d514f0db420fec3281a312df7e417);
+            
+        
+
+        circle_marker_99c5536c68699e5cd2f8841ec0a8ee13.bindPopup(popup_f9ec836a632387854abb66726d735b8a)
+        ;
+
+        
+    
+    
+            var circle_marker_eadfd977de810db05cdbc54e0796c333 = L.circleMarker(
+                [34.634007525314296, -120.61956747635683],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_606d90ff5ec3e995879e26e537956a8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a124b89e04be8d16ca6b45292491e02 = $(`<div id="html_7a124b89e04be8d16ca6b45292491e02" style="width: 100.0%; height: 100.0%;">Flight 43: landing</div>`)[0];
+                popup_606d90ff5ec3e995879e26e537956a8d.setContent(html_7a124b89e04be8d16ca6b45292491e02);
+            
+        
+
+        circle_marker_eadfd977de810db05cdbc54e0796c333.bindPopup(popup_606d90ff5ec3e995879e26e537956a8d)
+        ;
+
+        
+    
+    
+            var circle_marker_f0894d073a649639224a8b6a9d9ce0a8 = L.circleMarker(
+                [34.6301784746857, -120.61956747635683],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_2a254b5b70cfcb04c1687dca9861e0b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1ea076a95e367879a615a8af6202011 = $(`<div id="html_e1ea076a95e367879a615a8af6202011" style="width: 100.0%; height: 100.0%;">Flight 47: no landing</div>`)[0];
+                popup_2a254b5b70cfcb04c1687dca9861e0b7.setContent(html_e1ea076a95e367879a615a8af6202011);
+            
+        
+
+        circle_marker_f0894d073a649639224a8b6a9d9ce0a8.bindPopup(popup_2a254b5b70cfcb04c1687dca9861e0b7)
+        ;
+
+        
+    
+    
+            var circle_marker_94878fed42a6777a9ea7e238ebba333c = L.circleMarker(
+                [34.62678801873407, -120.61756559673354],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_9f68edb8b5b97159ee3f09024f63305b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6dbb07435c4f7fd059650e5eed8c89a5 = $(`<div id="html_6dbb07435c4f7fd059650e5eed8c89a5" style="width: 100.0%; height: 100.0%;">Flight 54: landing</div>`)[0];
+                popup_9f68edb8b5b97159ee3f09024f63305b.setContent(html_6dbb07435c4f7fd059650e5eed8c89a5);
+            
+        
+
+        circle_marker_94878fed42a6777a9ea7e238ebba333c.bindPopup(popup_9f68edb8b5b97159ee3f09024f63305b)
+        ;
+
+        
+    
+    
+            var circle_marker_aa499c37155d42386941ba3aadb95f2c = L.circleMarker(
+                [34.62461287005851, -120.61402044398338],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_b90b60c11a96691d9f8b533d2294bfb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a683ba8412ef8fa3aefbc8bd62bfd1d7 = $(`<div id="html_a683ba8412ef8fa3aefbc8bd62bfd1d7" style="width: 100.0%; height: 100.0%;">Flight 57: landing</div>`)[0];
+                popup_b90b60c11a96691d9f8b533d2294bfb0.setContent(html_a683ba8412ef8fa3aefbc8bd62bfd1d7);
+            
+        
+
+        circle_marker_aa499c37155d42386941ba3aadb95f2c.bindPopup(popup_b90b60c11a96691d9f8b533d2294bfb0)
+        ;
+
+        
+    
+    
+            var circle_marker_c076391a6922c68a00aa2075fd6b5d5e = L.circleMarker(
+                [34.62415132900721, -120.6097441698777],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_30575a9ba15a43090c88c87f5bdba0c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16c31321a27400dd9289650d77268a6c = $(`<div id="html_16c31321a27400dd9289650d77268a6c" style="width: 100.0%; height: 100.0%;">Flight 59: landing</div>`)[0];
+                popup_30575a9ba15a43090c88c87f5bdba0c5.setContent(html_16c31321a27400dd9289650d77268a6c);
+            
+        
+
+        circle_marker_c076391a6922c68a00aa2075fd6b5d5e.bindPopup(popup_30575a9ba15a43090c88c87f5bdba0c5)
+        ;
+
+        
+    
+    
+            var circle_marker_465d38397eb8491246badd9266fcfef5 = L.circleMarker(
+                [34.625509129072846, -120.60571641727941],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_dc00815a8d7867f63e9d2523376b442c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e2d368ae539215619173602f9a34cae = $(`<div id="html_3e2d368ae539215619173602f9a34cae" style="width: 100.0%; height: 100.0%;">Flight 62: landing</div>`)[0];
+                popup_dc00815a8d7867f63e9d2523376b442c.setContent(html_3e2d368ae539215619173602f9a34cae);
+            
+        
+
+        circle_marker_465d38397eb8491246badd9266fcfef5.bindPopup(popup_dc00815a8d7867f63e9d2523376b442c)
+        ;
+
+        
+    
+    
+            var circle_marker_ed815ba3bd03aeff851345f50327131b = L.circleMarker(
+                [34.628375214623645, -120.60285989576911],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0eb579db60da82d52f03e47fbd7274e3);
+        
+    
+        var popup_3fd7e65feb8e8fc499da94c22107e383 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c672f0297f40e4920721a9d95d28974 = $(`<div id="html_9c672f0297f40e4920721a9d95d28974" style="width: 100.0%; height: 100.0%;">Flight 66: landing</div>`)[0];
+                popup_3fd7e65feb8e8fc499da94c22107e383.setContent(html_9c672f0297f40e4920721a9d95d28974);
+            
+        
+
+        circle_marker_ed815ba3bd03aeff851345f50327131b.bindPopup(popup_3fd7e65feb8e8fc499da94c22107e383)
+        ;
+
+        
+    
+</script>
+</html>
